@@ -1,3 +1,17 @@
 [gd_scene format=3 uid="uid://btxlmutmrs7m3"]
 
+[ext_resource type="Texture2D" uid="uid://c38gp0pv4qhib" path="res://entities/customer/tile_0086.png" id="1_dhnu5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r1km4"]
+size = Vector2(16.64, 16.615385)
+
 [node name="Customer" type="Node2D" unique_id=2123838775]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=547876301]
+texture_filter = 1
+scale = Vector2(1.5625, 1.625)
+texture = ExtResource("1_dhnu5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=859773240]
+position = Vector2(2.0980835e-07, 0.30769226)
+shape = SubResource("RectangleShape2D_r1km4")

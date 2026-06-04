@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bph3m6l36lfoe"]
+
+[ext_resource type="PackedScene" uid="uid://kysw5c0su1fd" path="res://entities/potion/Potion1G.tscn" id="1_1riyi"]
+
+[node name="Potion2B" unique_id=625835359 instance=ExtResource("1_1riyi")]

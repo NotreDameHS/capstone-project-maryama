@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://68qtch28f5gb"]
+
+[node name="TextBubble" type="PanelContainer" unique_id=655666160]
+offset_left = -25.0
+offset_top = -24.0
+offset_right = 27.0
+offset_bottom = 24.0
