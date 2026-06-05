@@ -1,29 +1,36 @@
 [gd_scene format=3 uid="uid://t2hyo706pywd"]
 
+[ext_resource type="Script" uid="uid://0ppclhwb2ptp" path="res://entities/potion/potion_1g.gd" id="1_7dmvr"]
 [ext_resource type="Texture2D" uid="uid://dim7ecmm7ef67" path="res://assets/textures/kenney_tiny-dungeon/Tiles/tile_0114.png" id="1_l5gwo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0gjmv"]
-size = Vector2(254, 327)
+size = Vector2(254, 326.375)
+
+[sub_resource type="SystemFont" id="SystemFont_l5gwo"]
+subpixel_positioning = 0
 
 [node name="Potion1g" type="Node2D" unique_id=625835359]
+script = ExtResource("1_7dmvr")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=425469790]
 texture_filter = 1
-position = Vector2(531, 145.49998)
-scale = Vector2(20.25, 18.6875)
+position = Vector2(-1, 0)
 texture = ExtResource("1_l5gwo")
 
-[node name="Label" type="Label" parent="Sprite2D" unique_id=1675493988]
-offset_left = -3.8024693
-offset_top = 7.0367904
-offset_right = 159.19753
-offset_bottom = 76.03679
-theme_override_colors/font_color = Color(0.16078432, 0.7647059, 0.7019608, 1)
-theme_override_font_sizes/font_size = 50
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=127728579]
+position = Vector2(0.09876543, 2.0234113)
+scale = Vector2(0.049382716, 0.053511705)
+shape = SubResource("RectangleShape2D_0gjmv")
+
+[node name="Label" type="Label" parent="." unique_id=1675493988]
+texture_filter = 1
+offset_left = -20.0
+offset_top = 4.0
+offset_right = 20.0
+offset_bottom = 22.0
+theme_override_colors/font_color = Color(0.14117648, 0.58431375, 0.41568628, 1)
+theme_override_fonts/font = SubResource("SystemFont_l5gwo")
+theme_override_font_sizes/font_size = 10
 text = "GREEN"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=127728579]
-position = Vector2(536, 176.5)
-shape = SubResource("RectangleShape2D_0gjmv")

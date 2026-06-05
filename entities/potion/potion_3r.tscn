@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://dt8g56pq2lkjg"]
+
+[ext_resource type="PackedScene" uid="uid://bph3m6l36lfoe" path="res://entities/potion/potion_2b.tscn" id="1_djwww"]
+[ext_resource type="Texture2D" uid="uid://dhxbtybm63v0j" path="res://assets/textures/kenney_tiny-dungeon/Tiles/tile_0115.png" id="2_5ldph"]
+
+[node name="Potion3R" unique_id=625835359 instance=ExtResource("1_djwww")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=425469790]
+texture = ExtResource("2_5ldph")
+
+[node name="Label" parent="." index="1" unique_id=1675493988]
+theme_override_colors/font_color = Color(0.9098039, 0.27058825, 0.21568628, 1)
+text = "RED"

@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://btxlmutmrs7m3"]
 
 [ext_resource type="Texture2D" uid="uid://c38gp0pv4qhib" path="res://entities/customer/tile_0086.png" id="1_dhnu5"]
+[ext_resource type="Script" uid="uid://dd4xwkbc3n6x8" path="res://entities/customer/customer.gd" id="1_r1km4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r1km4"]
 size = Vector2(16.64, 16.615385)
 
 [node name="Customer" type="Node2D" unique_id=2123838775]
+script = ExtResource("1_r1km4")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=547876301]
 texture_filter = 1

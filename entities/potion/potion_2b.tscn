@@ -1,5 +1,23 @@
 [gd_scene format=3 uid="uid://bph3m6l36lfoe"]
 
-[ext_resource type="PackedScene" uid="uid://kysw5c0su1fd" path="res://entities/potion/Potion1G.tscn" id="1_1riyi"]
+[ext_resource type="PackedScene" uid="uid://t2hyo706pywd" path="res://entities/potion/potion_1g.tscn" id="1_eygpg"]
+[ext_resource type="Texture2D" uid="uid://krn4tqxsyhyq" path="res://assets/textures/kenney_tiny-dungeon/Tiles/tile_0116.png" id="2_3khq2"]
 
-[node name="Potion2B" unique_id=625835359 instance=ExtResource("1_1riyi")]
+[node name="Potion2b" unique_id=625835359 instance=ExtResource("1_eygpg")]
+
+[node name="Sprite2D" parent="." index="0" unique_id=425469790]
+position = Vector2(0, 1)
+scale = Vector2(1.084, 1)
+texture = ExtResource("2_3khq2")
+
+[node name="CollisionShape2D" parent="Sprite2D" index="0" unique_id=127728579]
+position = Vector2(0.09876543, 1.4448159)
+
+[node name="Label" parent="." index="1" unique_id=1675493988]
+offset_left = -17.0
+offset_top = 8.0
+offset_right = 18.0
+offset_bottom = 23.0
+theme_override_colors/font_color = Color(0, 0.6, 0.7921569, 1)
+theme_override_font_sizes/font_size = 10
+text = "BLUE"
