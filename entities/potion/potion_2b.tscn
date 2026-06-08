@@ -11,6 +11,7 @@ scale = Vector2(1.084, 1)
 texture = ExtResource("2_3khq2")
 
 [node name="CollisionShape2D" parent="Sprite2D" index="0" unique_id=127728579]
+visible = false
 position = Vector2(0.09876543, 1.4448159)
 
 [node name="Label" parent="." index="1" unique_id=1675493988]
@@ -19,5 +20,4 @@ offset_top = 8.0
 offset_right = 18.0
 offset_bottom = 23.0
 theme_override_colors/font_color = Color(0, 0.6, 0.7921569, 1)
-theme_override_font_sizes/font_size = 10
 text = "BLUE"

@@ -127,3 +127,21 @@ func _find_clicked_potion(position: Vector2) -> Node:
 	# If the loop finishes without returning a turret, the spot is clear
 	return null
 	
+
+
+
+
+func _show_upgrade_prompt() -> void:
+	
+	# 1. Check to see if we can still upgrade this turret
+	if GameManager.selected_turret_node.is_upgraded:
+		return # is_upgraded is True so turret is already upgraded
+	
+	# 2. Instantiate scene so we can make changes to it
+	var prompt = UPGRADE_PROMPT.instantiate()
+	
+	# 3. Set the upgrade prompt scene's target_turret to the one selected
+	prompt.target_potion = GameManager.selected_potion_node
+
+	# 4. Add the upgrade prompt to the scene (this triggers it's _ready() method)
+	add_child(prompt)

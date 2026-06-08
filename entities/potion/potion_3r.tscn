@@ -8,6 +8,9 @@
 [node name="Sprite2D" parent="." index="0" unique_id=425469790]
 texture = ExtResource("2_5ldph")
 
+[node name="CollisionShape2D" parent="Sprite2D" index="0" unique_id=127728579]
+visible = false
+
 [node name="Label" parent="." index="1" unique_id=1675493988]
 theme_override_colors/font_color = Color(0.9098039, 0.27058825, 0.21568628, 1)
 text = "RED"

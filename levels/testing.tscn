@@ -3,6 +3,8 @@
 [ext_resource type="PackedScene" uid="uid://by75omllh4v5f" path="res://levels/tile_map_layer_2.tscn" id="1_op810"]
 [ext_resource type="PackedScene" uid="uid://t2hyo706pywd" path="res://entities/potion/potion_1g.tscn" id="2_nqmqf"]
 [ext_resource type="PackedScene" uid="uid://bph3m6l36lfoe" path="res://entities/potion/potion_2b.tscn" id="3_qyon5"]
+[ext_resource type="PackedScene" uid="uid://dt8g56pq2lkjg" path="res://entities/potion/potion_3r.tscn" id="4_qyon5"]
+[ext_resource type="PackedScene" uid="uid://btxlmutmrs7m3" path="res://entities/customer/customer.tscn" id="5_6c6g8"]
 
 [node name="Testing" type="Node2D" unique_id=39824499]
 
@@ -13,7 +15,25 @@ position = Vector2(367, 262)
 zoom = Vector2(2, 2)
 
 [node name="Potion1g" parent="." unique_id=625835359 instance=ExtResource("2_nqmqf")]
-position = Vector2(448, 169)
+position = Vector2(220, 297)
 
 [node name="Potion2b" parent="." unique_id=293540951 instance=ExtResource("3_qyon5")]
-position = Vector2(528, 168)
+position = Vector2(370, 319)
+
+[node name="Potion3R" parent="." unique_id=389436352 instance=ExtResource("4_qyon5")]
+position = Vector2(520, 292)
+
+[node name="Customer" parent="." unique_id=2123838775 instance=ExtResource("5_6c6g8")]
+position = Vector2(207, 178)
+
+[node name="Customer2" parent="." unique_id=1886207987 instance=ExtResource("5_6c6g8")]
+position = Vector2(288, 176)
+
+[node name="Customer3" parent="." unique_id=1511880318 instance=ExtResource("5_6c6g8")]
+position = Vector2(369, 177)
+
+[node name="Customer4" parent="." unique_id=1892647004 instance=ExtResource("5_6c6g8")]
+position = Vector2(448, 176)
+
+[node name="Customer5" parent="." unique_id=1775582057 instance=ExtResource("5_6c6g8")]
+position = Vector2(529, 175)
