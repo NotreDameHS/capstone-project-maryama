@@ -12,23 +12,22 @@ subpixel_positioning = 0
 [node name="Potion1g" type="Area2D" unique_id=1968705252]
 script = ExtResource("1_7dmvr")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=425469790]
-texture_filter = 1
-position = Vector2(-1, 0)
-texture = ExtResource("1_l5gwo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=127728579]
-visible = false
-position = Vector2(0.09876543, 2.0234113)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=127728579]
+position = Vector2(233, 100)
 scale = Vector2(0.049382716, 0.053511705)
 shape = SubResource("RectangleShape2D_0gjmv")
 
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=425469790]
+texture_filter = 1
+position = Vector2(233, 99)
+texture = ExtResource("1_l5gwo")
+
 [node name="Label" type="Label" parent="." unique_id=1675493988]
 texture_filter = 1
-offset_left = -20.0
-offset_top = 4.0
-offset_right = 20.0
-offset_bottom = 22.0
+offset_left = 213.0
+offset_top = 105.0
+offset_right = 253.0
+offset_bottom = 123.0
 theme_override_colors/font_color = Color(0.14117648, 0.58431375, 0.41568628, 1)
 theme_override_fonts/font = SubResource("SystemFont_l5gwo")
 theme_override_font_sizes/font_size = 10
