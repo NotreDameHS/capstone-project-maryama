@@ -2,9 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://by75omllh4v5f" path="res://levels/tile_map_layer_2.tscn" id="1_op810"]
 [ext_resource type="PackedScene" uid="uid://t2hyo706pywd" path="res://entities/potion/potion_1g.tscn" id="2_nqmqf"]
-[ext_resource type="PackedScene" uid="uid://bph3m6l36lfoe" path="res://entities/potion/potion_2b.tscn" id="3_qyon5"]
-[ext_resource type="PackedScene" uid="uid://dt8g56pq2lkjg" path="res://entities/potion/potion_3r.tscn" id="4_qyon5"]
 [ext_resource type="PackedScene" uid="uid://btxlmutmrs7m3" path="res://entities/customer/customer.tscn" id="5_6c6g8"]
+[ext_resource type="PackedScene" uid="uid://dyyx3n8rr5hqj" path="res://entities/textbubble/inventory.tscn" id="6_ynapc"]
 
 [node name="Testing" type="Node2D" unique_id=39824499]
 
@@ -15,7 +14,7 @@ position = Vector2(367, 262)
 zoom = Vector2(2, 2)
 
 [node name="Potion1g" parent="." unique_id=625835359 instance=ExtResource("2_nqmqf")]
-position = Vector2(220, 297)
+position = Vector2(312, 213)
 
 [node name="Customer" parent="." unique_id=2123838775 instance=ExtResource("5_6c6g8")]
 position = Vector2(207, 178)
@@ -32,8 +31,5 @@ position = Vector2(448, 176)
 [node name="Customer5" parent="." unique_id=1775582057 instance=ExtResource("5_6c6g8")]
 position = Vector2(529, 175)
 
-[node name="Potion2b" parent="." unique_id=512459891 instance=ExtResource("3_qyon5")]
-position = Vector2(351, 293)
-
-[node name="Potion3R" parent="." unique_id=1400695467 instance=ExtResource("4_qyon5")]
-position = Vector2(463, 346)
+[node name="Inventory" parent="." unique_id=419148356 instance=ExtResource("6_ynapc")]
+position = Vector2(855, 363)

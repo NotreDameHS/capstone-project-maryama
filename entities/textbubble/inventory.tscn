@@ -1,0 +1,71 @@
+[gd_scene format=3 uid="uid://dyyx3n8rr5hqj"]
+
+[ext_resource type="Script" uid="uid://8ta1oogwjv4k" path="res://entities/textbubble/box.gd" id="1_u1vrf"]
+[ext_resource type="Texture2D" uid="uid://dim7ecmm7ef67" path="res://assets/textures/kenney_tiny-dungeon/Tiles/tile_0114.png" id="2_seu2h"]
+[ext_resource type="Script" uid="uid://cvwe3kcmpe0me" path="res://entities/textbubble/potion.gd" id="3_fp0d8"]
+
+[node name="Inventory" type="Node2D" unique_id=419148356]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=250569167]
+
+[node name="Box" type="Panel" parent="CanvasLayer" unique_id=1447118602]
+offset_left = 220.0
+offset_top = 274.0
+offset_right = 535.0
+offset_bottom = 384.0
+script = ExtResource("1_u1vrf")
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Box" unique_id=1924623341]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 4
+
+[node name="PotionBox" type="Panel" parent="CanvasLayer/Box/GridContainer" unique_id=244067126]
+custom_minimum_size = Vector2(75, 50)
+layout_mode = 2
+
+[node name="potion" type="TextureRect" parent="CanvasLayer/Box/GridContainer/PotionBox" unique_id=1144705522]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.1
+anchor_top = 0.1
+anchor_right = 0.89
+anchor_bottom = 0.89
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_seu2h")
+stretch_mode = 5
+script = ExtResource("3_fp0d8")
+metadata/_edit_use_anchors_ = true
+
+[node name="PotionBox2" type="Panel" parent="CanvasLayer/Box/GridContainer" unique_id=74837318]
+custom_minimum_size = Vector2(75, 50)
+layout_mode = 2
+
+[node name="PotionBox3" type="Panel" parent="CanvasLayer/Box/GridContainer" unique_id=1420629938]
+custom_minimum_size = Vector2(75, 50)
+layout_mode = 2
+
+[node name="PotionBox4" type="Panel" parent="CanvasLayer/Box/GridContainer" unique_id=992873534]
+custom_minimum_size = Vector2(75, 50)
+layout_mode = 2
+
+[node name="PotionBox5" type="Panel" parent="CanvasLayer/Box/GridContainer" unique_id=242937049]
+custom_minimum_size = Vector2(75, 50)
+layout_mode = 2
+
+[node name="PotionBox6" type="Panel" parent="CanvasLayer/Box/GridContainer" unique_id=1786078160]
+custom_minimum_size = Vector2(75, 50)
+layout_mode = 2
+
+[node name="PotionBox7" type="Panel" parent="CanvasLayer/Box/GridContainer" unique_id=1471427702]
+custom_minimum_size = Vector2(75, 50)
+layout_mode = 2
+
+[node name="PotionBox8" type="Panel" parent="CanvasLayer/Box/GridContainer" unique_id=1667684079]
+custom_minimum_size = Vector2(75, 50)
+layout_mode = 2
